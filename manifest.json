@@ -1,0 +1,15 @@
+{
+    "name": "Conversate",
+    "version": "1.0.0",
+    "description": "interpretations of languistic uniqueness in English",
+    "manifest_version": 3,
+    "author": "HackPSU Conversate Team",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Conversate"
+    },
+    "default-locale": "en",
+    "icon": {
+        "128": "128-icon.PNG"
+    }
+}

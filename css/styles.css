@@ -41,7 +41,12 @@
 .submit-button{
     background-color: #F15A29;
     border-color: #F15A29;
-    border-radius: 10%;
+    border-radius: 0;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tool-tip{
@@ -59,8 +64,13 @@ body{
     min-width: max-content;
 }
 
-h1, label, p{
+h1{
     font-family: 'Raleway', sans-serif;
+} 
+
+label, p{
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
 }
 
 img{

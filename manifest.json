@@ -8,8 +8,10 @@
         "default_popup": "index.html",
         "default_title": "Conversate"
     },
-    "default-locale": "en",
-    "icon": {
-        "128": "128-icon.PNG"
+    "icons": {
+        "128": "img/128-icon.PNG",
+        "64": "img/64-icon.PNG",
+        "32": "img/32-icon.PNG",
+        "16": "img/16-icon.PNG"
     }
 }

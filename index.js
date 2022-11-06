@@ -1,3 +1,5 @@
+let timer = setTimeout(outputOfText, 2000);
+
 //Create event listener for "Submit" button
 document.getElementById("submitButton").addEventListener("click", outputOfText);
 

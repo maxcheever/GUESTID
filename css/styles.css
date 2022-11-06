@@ -68,7 +68,7 @@
 }
 
 body{
-    margin: 10px;
+    margin: 0px 10px 10px;
     min-width: max-content;
 }
 
@@ -78,7 +78,6 @@ h1{
 
 p{
     font-family: 'Raleway', sans-serif;
-    font-size: large;
 }
 
 img{

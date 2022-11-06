@@ -5,4 +5,4 @@ So far, the functionality of this extension allows for efficient gathering of in
 
 [Devpost](https://devpost.com/software/conversate)
 
-![Conversate LOGO](https://user-images.githubusercontent.com/117539158/200187066-943f4a0e-2ced-47c0-ad59-d51ada64c12d.png)
+![Conversate LOGO REAl](https://user-images.githubusercontent.com/117539158/200187499-0dea4988-9380-4b8a-8087-8933ac6a38ad.png)

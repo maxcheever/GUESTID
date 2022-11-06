@@ -1,0 +1,63 @@
+.headDiv{
+    position: relative;
+}
+
+.header{
+    display: inline-block;
+    /*border: 1px solid red;*/
+    vertical-align: middle;
+}
+
+.inputDiv{
+    position: relative;
+}
+
+.outputDiv{
+    position: relative;
+}
+
+.info-button{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-width: 1px;
+    margin-left: 25px;
+}
+
+.input-box{
+    font-family: 'Raleway', sans-serif;
+    border-width: 3px;
+    border-color: black;
+    min-height:110px;
+    min-width: 250px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.submit-button{
+    background-color: #F15A29;
+    border-color: #F15A29;
+    border-radius: 10%;
+}
+
+body{
+    margin: 10px;
+    min-width: max-content;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    margin-bottom: 0.67em;
+}
+
+label{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}

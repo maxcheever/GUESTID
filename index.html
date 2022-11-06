@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversate</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css\styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="headDiv">
+            <div class="header"><h1>Conversate</h1></div>
+            <div class="header"></div><button class="info-button"><b>i</b></button></div>
+            <img src="img\Conversate Gorilla.svg" alt="Gorilla and speach bubble 'C'" width="200px">
+        </div>
+        <div class="inputDiv">
+            <label for="text-input">Input text here:</label>
+            <form>
+                <textarea id="text-input" class="input-box" rows="7" cols="40"></textarea>
+            </form>
+            <button onclick="outputOfInput('text-input')" class="submit-button">Submit</button>
+        </div>
+        <div class="outputDiv">
+            <p>Output:</p>
+            <div id="outputText" class="outputText"></div>
+        </div>
+
+    </body>
+</html>

@@ -1,4 +1,3 @@
 # CONVERSATE
-Conversate is a chrome extension with the purpose of helping all understand regional dialects in the English language.
-
-We created this extension to allow for efficient gathering of information to save time while researching, and to improve access to information.
+Conversate is a chrome extension created with the purpose of helping all understand regional conversational dialects in the English language.
+So far, the functionality of this extension allows for efficient gathering of information to save time while researching and improve access to information.

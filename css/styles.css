@@ -4,7 +4,6 @@
 
 .header{
     display: inline-block;
-    /*border: 1px solid red;*/
     vertical-align: middle;
 }
 
@@ -25,6 +24,10 @@
     margin-left: 25px;
 }
 
+.info-button:hover + .tool-tip{
+    display: block;
+}
+
 .input-box{
     font-family: 'Raleway', sans-serif;
     border-width: 3px;
@@ -41,23 +44,25 @@
     border-radius: 10%;
 }
 
+.tool-tip{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+
 body{
     margin: 10px;
     min-width: max-content;
 }
 
-h1{
+h1, label, p{
     font-family: 'Raleway', sans-serif;
 }
 
 img{
     margin-bottom: 0.67em;
-}
-
-label{
-    font-family: 'Raleway', sans-serif;
-}
-
-p{
-    font-family: 'Raleway', sans-serif;
 }

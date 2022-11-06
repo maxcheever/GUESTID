@@ -1,7 +1,9 @@
-let timer = setTimeout(outputOfText, 2000);
-
 //Create event listener for "Submit" button
-document.getElementById("submitButton").addEventListener("click", outputOfText);
+document.getElementById("submitButton").addEventListener("click", timeFunction);
+
+function timeFunction(){
+    setTimeout(outputOfText, 2000);
+}
 
 function outputOfText(){
     //Set the output text to the input text

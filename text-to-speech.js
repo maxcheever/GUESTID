@@ -1,3 +1,5 @@
+///////////// UNUSED TEXT-TO-SPEECH FUNCTION /////////////////
+
 export function synthesizeSpeech(text) {
 	const speechConfig = sdk.SpeechConfig.fromSubscription(
 		"683505689ac541de9d9225564ca73a7d",

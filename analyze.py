@@ -1,7 +1,11 @@
 from azure.ai.textanalytics import TextAnalyticsClient
 from azure.core.credentials import AzureKeyCredential
+from bs4 import BeautifulSoup
 key = "a047aefdcabf40deb66cbf49ebb6566f"
 endpoint = "https://conversate-analysis.cognitiveservices.azure.com/"
+with open('index.html', 'r') as f:
+    soup = BeautifulSoup(f, 'html.parser')
+    text = str(soup.textarea.contents[0])
 
 def authenticate_client():
     ta_credential = AzureKeyCredential(key)
@@ -12,7 +16,7 @@ def authenticate_client():
 
 client = authenticate_client()
 
-def sample_extractive_summarization(client):
+def sample_extractive_summarization(client, text):
     from azure.core.credentials import AzureKeyCredential
     from azure.ai.textanalytics import (
         TextAnalyticsClient,
@@ -20,11 +24,7 @@ def sample_extractive_summarization(client):
     ) 
 
     document = [
-        "The extractive summarization feature uses natural language processing techniques to locate key sentences in an unstructured text document. "
-        "These sentences collectively convey the main idea of the document. This feature is provided as an API for developers. " 
-        "They can use it to build intelligent solutions based on the relevant information extracted to support various use cases. "
-        "In the public preview, extractive summarization supports several languages. It is based on pretrained multilingual transformer models, part of our quest for holistic representations. "
-        "It draws its strength from transfer learning across monolingual and harness the shared nature of languages to produce models of improved quality and efficiency. "
+        text
     ]
 
     poller = client.begin_analyze_actions(
@@ -42,8 +42,11 @@ def sample_extractive_summarization(client):
                 extract_summary_result.code, extract_summary_result.message
             ))
         else:
-            print("Summary extracted: \n{}".format(
-                " ".join([sentence.text for sentence in extract_summary_result.sentences]))
-            )
+            return "Summary extracted: \n{}".format(" ".join([sentence.text for sentence in extract_summary_result.sentences]))
 
-sample_extractive_summarization(client)
+output = sample_extractive_summarization(client, text)
+soup.find("div", {"id": "outputText"}).string = output
+print(soup.find("div", {"id": "outputText"}).contents)
+with open('index.html', 'w') as f:
+    f.write(str(soup.prettify()))
+

@@ -15,6 +15,14 @@
     position: relative;
 }
 
+.outputText{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    width: 300px;
+    overflow-wrap: break-word;
+    margin-top: 10px;
+}
+
 .info-button{
     position: relative;
     height: 20px;
@@ -68,7 +76,7 @@ h1{
     font-family: 'Raleway', sans-serif;
 } 
 
-label, p{
+p{
     font-family: 'Raleway', sans-serif;
     font-size: large;
 }

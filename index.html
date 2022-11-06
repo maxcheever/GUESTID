@@ -4,26 +4,24 @@
         <title>Conversate</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css\styles.css">
-        <script src="scripts.js"></script>
+        <script src="index.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="headDiv">
             <div class="header"><h1>Conversate</h1></div>
             <div class="header"></div><button class="info-button"><b>i</b></button>
-            <div class="tool-tip">This will be information about how the program works</div>
+            <div class="tool-tip">Enter text in field below and click "Submit" for summary of text</div>
         </div>
-        <img src="img\Conversate Gorilla.svg" alt="Gorilla and speach bubble 'C'" width="200px">
+        <img src="img\Conversate Gorilla.svg" alt="Gorilla and speach-bubble 'C'" width="200px">
         <div class="inputDiv">
-            <label for="text-input">Input text here:</label>
             <form>
-                <textarea id="text-input" class="input-box" rows="7" cols="40"></textarea>
+                <textarea id="text-input" class="input-box" rows="7" cols="40"  placeholder="Enter text here"></textarea>
             </form>
             <button id="submitButton" class="submit-button">Submit</button>
             <script src="index.js"></script>
         </div>
         <div class="outputDiv">
-            <p>Output:</p>
             <div id="outputText" class="outputText"></div>
         </div>
 
